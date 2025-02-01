@@ -266,7 +266,7 @@ def randomgennofile(): #generates random letters to file
     
         
 def generateotp(): #OTP generator
-    number = simpledialog.askinteger(text,'how many characters would you like, longer numbers will take a while)
+    number = simpledialog.askinteger(text,'how many characters would you like, longer numbers will take a while')
     userinput =messagebox.askyesno(text,'Would you like to save this to a file?')
     
     if userinput==True:
