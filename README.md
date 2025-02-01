@@ -6,10 +6,9 @@ currently implemented:
   encoding (also my version),
   generating OTPs (file support also),
   the quit button (wow),
+  removed command line
 
 probably will be implemented: 
-  removal of the need for the console,
-  make it a .exe (maybe),
   live encoding (maybe also decoding),
 
 feel free to use anything on here idc
