@@ -1,5 +1,5 @@
 import tkinter
-import random
+import secrets
 import string
 import os
 import sys
@@ -255,12 +255,12 @@ def usedecoder(): #decoder mode
 
 
 def randomgenfile(): #generates random letters
-    randomletter = str(random.choice(string.ascii_lowercase),)
+    randomletter = str(secrets.choice(string.ascii_lowercase),)
     with open(file_path_otp, "a") as file: #file encoder
         file.write(randomletter)
 
 def randomgennofile(): #generates random letters to file
-    randomletter = str(random.choice(string.ascii_lowercase),)
+    randomletter = str(secrets.choice(string.ascii_lowercase),)
     with open(file_path_otp, "a") as file: #file encoder
         file.write(randomletter)
     
@@ -274,8 +274,6 @@ def generateotp(): #OTP generator
         x = range(number)
         for n in x:
             randomgenfile()
-            print(n,'/',number)
-        print('DONE')
     else:
         x = range(number)
         for n in x:
